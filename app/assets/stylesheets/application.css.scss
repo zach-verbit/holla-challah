@@ -17,6 +17,39 @@
  @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-.navbar-brand {
-    font-family: Shrikhand, cursive;
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a   {
+  font-family: Shrikhand, cursive;
+  color: white;
+    &:hover {
+      color: white;
+      opacity: 0.75;
+    }
+}
+
+.home-callout, .navbar-default {
+  background: #cb2d3e;   
+  background: -webkit-linear-gradient(left, #ef473a, #cb2d3e);
+  background: -moz-linear-gradient(left, #ef473a, #cb2d3e);
+  background: -o-linear-gradient(left, #ef473a, #cb2d3e);
+  background: linear-gradient(to right, #ef473a, #cb2d3e); 
+}
+
+.home-callout {
+  color: white ;
+  font-family: Roboto Condensed, sans-serif;
+  margin-top: -20px;
+}
+
+.home-callout h1 {
+  font-size: 100px;
+}
+
+.home-callout p {
+  font-size: 60px;
+}
+.navbar {
+  border: none;
 }
